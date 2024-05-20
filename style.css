@@ -1,0 +1,515 @@
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+    @font-face{
+            src:url("SolaimanLipi.ttf");
+            font-family:SolaimanLipi;
+        }
+                @font-face{
+            src:url("AmiriQuran-Regular.ttf");
+            font-family:AmiriQuranRegular;
+        }
+
+#loading{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height:110vh;
+	background: #fff
+	url('loading.gif');
+	background-repeat:no-repeat;
+	background-size:90%;
+	background-position:center;
+	z-index: 99999;
+	margin:0 auto;
+	
+}
+
+
+
+.selectContainer{
+    width:80%;
+    height:80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left:35px;
+    margin:10px auto;
+}
+#selectbox{
+    border:none;
+    outline:none;
+    padding:0px 40px 0px 40px;
+    height:40px;
+    appearance:none;
+    font-family:SolaimanLipi;
+    font-size: 15px;
+}
+.selectContainer .iconContainer{
+    width:20px;
+    height:40px;
+    background-color:green;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.iconContainer i{
+    margin-right:50px;
+    font-size:25px;
+    color:green;
+    cursor:pointer;
+}
+
+.DiscriptionCard{
+    width:80%;
+    height:auto;
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    margin-left:40px;
+    border-radius:5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin:0 auto;
+}
+.DiscriptionCard h3{
+    padding:3px;
+    font-size:13px;
+    font-family:SolaimanLipi;
+}
+hr{
+    text-align:center;
+    margin:0 auto;
+    color:green;
+}
+.DiscriptionCard p{
+    font-family:AmiriQuranRegular;
+    font-size:25px;
+    padding:16px;
+}
+.DiscriptionCard #BanglaBornona{
+    font-size: 15px;
+    font-family:SolaimanLipi;
+}
+.DiscriptionCardBottom{
+    height:20px;
+    width:100%;
+    background-color:green;
+}
+.DiscriptionCardBottom i{
+    margin-top:-22px;
+    margin-left:235px;
+    background-color:#4B972B;
+    padding:10px;
+    border-radius:50%;
+    font-size:20px;
+    color:white;
+    cursor:pointer;
+    aspect-ratio:1;
+}
+.popup{
+    width:90%;
+    height:350px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius:5px;
+    transition:3s;
+    display:none;
+    
+}
+.popup .popupfooter{
+    position:fixed;
+    bottom:5px;
+    display:flex;
+    justify-content:center;
+    margin-left:25px;
+    font-size:10px;
+}
+.popup .popupfooter .devspan{
+    padding-right:3px;
+}
+.popup .popupfooter .devspan,.devInfo{
+    font-size:12px;
+    margin: 5px auto;
+}
+.popup .popupfooter a{
+    text-decoration:none;
+    color:#00BFFF;
+    font-weight:bold;
+    font-size:12px;
+    margin:5px auto;
+}
+.popup .popupBox{
+    width:95%;
+    height:65px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin:20px auto 0px auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+}
+.popup .popupBoxAlign{
+    margin-left:-5px;
+    position:sticky;
+    top:0;
+}
+.popup .popupBoxAlign,.salam,#arabicdate{
+    position:sticky;
+    top:0;
+}
+.popup .cardviewPopup{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin: 30px auto 10px 10px;
+    padding:5px;
+    flex-wrap:wrap;
+    gap:10px;
+    overflow:scroll;
+    width:95%;
+    height:200px;
+    
+}
+.popup .cardviewPopup .cardviewContent{
+    width:90px;
+    height:90px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin:5px auto;
+}
+#weatherImages{
+    float:right;
+    margin-left:35px;
+    width: 45px;
+    height:45px;
+}
+.popup .popupBox p{
+    font-size:13px;
+    margin-top:-10px;
+    
+}
+.popup .popupBox img{
+    float:right;
+}
+#arabicdate{
+    margin-top:5px;
+    font-size:15px;
+    font-family: "Roboto", sans-serif;
+}
+.popup i{
+    position:absolute;
+    top:5px;
+    right:5px;
+    padding:5px;
+    border-radius:50%;
+    background-color:#eee;
+    color:red;
+    font-weight:bold;
+    aspect-ratio:1;
+    width:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+b{
+    color:green;
+    font-size:15px;
+}
+.add-to{
+    width:100%;
+    height:52px;
+    background-color:white;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    bottom:0;
+    animation: animated 1s ease;
+    cursor:pointer;
+}
+@keyframes animated {
+    0%{
+        transform:translateY(30px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+.add-to img{
+    margin-left:15px;
+}
+.add-to-btn{
+    font-size:15px;
+    margin-left:-20px;
+    color:#78ADFD;
+    line-height:10px;
+    padding:0 30px;
+    background: transparent;
+    border:none;
+}
+.add-to i{
+    margin-right:20px;
+    color:#1C1D1F;
+    padding:5px;
+}
+.Navbar{
+    width:100%;
+    height:70px;
+    display:none;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width:100%;
+    height:70px;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position:fixed;
+    top:0;
+    left:0;
+    transition: all 0.3s ease-in-out;
+    z-index:100;
+}
+.Navbar img{
+    margin-left:15px;
+}
+.Navbar i{
+    font-size:19px;
+    margin-right:10px;
+    margin-top:2px;
+    color:#10BB99;
+}
+#toggle-button{
+    margin-right:60px;
+    margin-top:5px;
+}
+
+.style{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width:100%;
+    height:70px;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position:fixed;
+    top:0;
+    left:0;
+    transition: all 0.3s ease-in-out;
+}
+.navActive{
+    background-color:black;
+    color:white;
+}
+.style2{
+    transition: all 0.3s ease-in-out;
+}
+lable{
+    position:absolute;
+    width:45px;
+    height: 22px;
+    right:20px;
+    top:20px;
+    border:2px solid #10BB99;
+    border-radius: 22px;
+    background-color: #18CBA4;
+}
+lable:before{
+    position:absolute;
+    content:"";
+    width:16px;
+    height:16px;
+    left:2px;
+    top:1px;
+    background-color:white;
+    border-radius:50%;
+    transition: all 0.7s;
+}
+lable.active:before{
+    left: 24px;
+    background-color:#1D2935;
+}
+body.night {
+    background-color:#1D2935;
+    color: black;
+}
+
+
+.onlineOffline{
+    width:60%;
+    height:45px;
+    background-color:#C1F6D8;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-radius:3px;
+    margin:25px auto;
+    padding:5px;
+    border-left:5px solid #34D575;
+    position:absolute;
+    top:20px;
+    right:5px;
+    animation:Animated 2s ease forwards;
+}
+@keyframes Animated{
+        0%{
+    transform: translateX(100%);
+  }
+  40%{
+    transform: translateX(-10%);
+  }
+  80%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-10px);
+  }
+}
+#onlineOfflineImage{
+    background-color:white;
+    border-radius:50%;
+    height:35px;
+    width:35px;
+    padding:5px;
+}
+
+#onoffcross{
+    margin-right: 5px;
+    
+}
+.cancelbuttonAnimation{
+    animation:cancelbutton 3s ease forwards;
+}
+@keyframes cancelbutton{
+    0%{
+    transform: translateX(-10px);
+  }
+  40%{
+    transform: translateX(0%);
+  }
+  80%{
+    transform: translateX(-10%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+#status{
+    font-family: "Roboto", sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    color:green;
+}
+
+
+@media all and (display-mode: standalone) {
+.add-to{
+    display:none;
+}
+.Navbar{
+    display:flex;
+}
+
+.selectContainer{
+    width:80%;
+    height:80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left:35px;
+    margin:70px auto 10px auto;
+}
+
+
+.onlineOffline{
+    width:60%;
+    height:45px;
+    background-color:#C1F6D8;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-radius:3px;
+    margin:25px auto;
+    padding:5px;
+    border-left:5px solid #34D575;
+    position:absolute;
+    top:20px;
+    right:5px;
+    animation:Animated 2s ease forwards;
+    z-index:101;
+}
+@keyframes Animated{
+        0%{
+    transform: translateX(100%);
+  }
+  40%{
+    transform: translateX(-10%);
+  }
+  80%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-10px);
+  }
+}
+#onlineOfflineImage{
+    background-color:white;
+    border-radius:50%;
+    height:35px;
+    width:35px;
+    padding:5px;
+}
+
+#onoffcross{
+    margin-right: 5px;
+    background-color: #eee;
+    padding:10px;
+    border-radius:50%;
+}
+.cancelbuttonAnimation{
+    animation:cancelbutton 3s ease forwards;
+}
+@keyframes cancelbutton{
+    0%{
+    transform: translateX(-10px);
+  }
+  40%{
+    transform: translateX(0%);
+  }
+  80%{
+    transform: translateX(-10%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+#status{
+    font-family: "Roboto", sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    color:green;
+}
+
+
+
+}
+#salam{
+font-family:SolaimanLipi;
+}
+#crossIcon{
+    cursor:pointer;
+    z-index:100;
+}

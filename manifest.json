@@ -1,0 +1,96 @@
+{
+  "short_name": "Ebtiga Ayah",
+  "name": "Ebtiga Ayah",
+    "start_url": "HadidthsWebverson.html",
+  "background_color": "white",
+  "display": "standalone",
+  "theme_color": "white",
+  "icons": [
+    {
+      "src": "appiconicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "appiconicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  
+  
+    /*"shortcuts": [
+    {
+      "name": "Open Play Later",
+      "short_name": "Play Later",
+      "description": "View the list of podcasts you saved for later",
+      "url": "index.html",
+      "icons": [{ "src": "sun.png", "sizes": "128x128" "type": "image/png" }]
+    },
+    {
+      "name": "View Subscriptions",
+      "short_name": "Subscriptions",
+      "description": "View the list of podcasts you listen to",
+      "url": "index2.html",
+      "icons": [{ "src": "cloudy.png", "sizes": "128x128" }]
+    }
+  ],*/
+  
+  "screenshots" : [
+  {
+    "src": "Ui Description1.jpg",
+    "sizes": "1080x1920",
+    "type": "image/jpg",
+    "label": "Homescreen of Awesome App"
+  },
+  {
+    "src": "Ui Description2.jpg",
+    "sizes": "1080x1920",
+    "type": "image/jpg",
+    "label": "List of Awesome Resources available in Awesome App"
+  },
+    {
+    "src": "Ui Description3.jpg",
+    "sizes": "1080x1920",
+    "type": "image/jpg",
+    "label": "Homescreen of Awesome App"
+  },
+    {
+    "src": "Ui Description4.jpg",
+    "sizes": "1080x1920",
+    "type": "image/jpg",
+    "label": "Homescreen of Awesome App"
+  }
+],
+"description": "নাহমাদুহু ওয়া নুসাল্লি আলা রাসূলিহিল কারীম আম্মা বাদ। আউজুবিল্লাহি মিনাশ শায়তানির রাজিম,বিসমিল্লাহির রাহমানির রাহিম। আলহামদুলিল্লাহ, আলহামদুলিল্লাহ আলা কুল্লিহাল। আমরা আমাদের ‘ইবতিগা আয়াহ’ নামক অনলাইন ভিত্তিক ইসলামিক এ্যাপ’টি পাবলিশ করেছি। আশা করি,প্রযুক্তিটি আপনাদের ভালো লাগবে,ইনশাল্লাহ । ",
+
+
+
+  "shortcuts": [
+    {
+      "name": "অনলাইন তসবীহ পাঠ",
+      "short_name": "Ibtiga ayah2",
+      "url": "tasbih.html",
+      "icons": [{ "src": "tasbih.png", "sizes": "128x128" }]
+    },
+    {
+      "name": "কিছু হাদিস",
+      "short_name": "Ibtiga ayah2",
+      "url": "duwa.html",
+      "icons": [{ "src": "hadidthsicon.png", "sizes": "128x128" }]
+    },
+        {
+      "name": "নামাযের সময়-সূচী",
+      "short_name": "Ibtiga ayah2",
+      "url": "prayertime.html",
+      "icons": [{ "src": "mosque.png", "sizes": "128x128" }]
+    },
+        {
+      "name": "আরবী মাস ও ক্যালেন্ডার",
+      "short_name": "Ibtiga ayah2",
+      "url": "islamiccalender.html",
+      "icons": [{ "src": "arabicmonth.png", "sizes": "128x128" }]
+    }
+  ] 
+}
+
