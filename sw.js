@@ -3,7 +3,7 @@ self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open('static')
       .then(function (cache) {
-        cache.add('index.html');
+        cache.add('https://mdjoynalabedin61.github.io/IbtigaAyah');
         cache.add('style.css');
         cache.add('index.js');
         cache.add('manifest.json');
